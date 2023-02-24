@@ -1,0 +1,62 @@
+@import 'assets/scss';
+.report-detail-month-text {
+    color: $color-black;
+    font-size: $text-h5;
+    font-family: $font-regular;
+    display: flex;
+    justify-content: center;
+}
+
+.container-image-edit {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.image-avatar-user {
+    opacity: 1;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.middle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background: $color-gray-overthought;
+    border-radius: 100px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.container-image-edit:hover .image-avatar-user {
+    opacity: 0.7;
+}
+
+.container-image-edit:hover .middle {
+    opacity: 1;
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: row;
+    width: 42px;
+    height: 42px;
+    padding-bottom: 35px;
+}

@@ -1,0 +1,454 @@
+@import 'assets/scss';
+.page {
+    width: 100%;
+    overflow: auto;
+    height: calc(var(--vh, 1vh) * 100 - $header-height);
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+}
+
+.back {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: $color-gray-button;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+    .ic-back {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.back-mobile {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: $color-gray-button;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+    .ic-back {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.banner-container {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.text-banner-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.invest-tien-ngay-text {
+    color: $color-white;
+    font-family: $font-medium;
+    font-size: $text-h0;
+    text-align: center;
+    margin-top: 16px;
+    animation: splash 1s normal forwards ease-in-out;
+    @include mobile {
+        font-size: $text-h3;
+        margin: 16px 0 5px 0;
+    }
+}
+
+.invest-build-future-text {
+    color: $color-white;
+    font-family: $font-medium;
+    font-size: $text-h4;
+    text-align: center;
+    animation: splash 2.5s normal forwards ease-in-out;
+    @include mobile {
+        font-size: $text-h6;
+        margin-bottom: 6px;
+    }
+}
+
+.describe-text {
+    color: $color-white;
+    padding-bottom: 16px;
+    font-family: $font-medium;
+    font-size: $text-h6;
+    text-align: center;
+    animation: splash 3.5s normal forwards ease-in;
+    @include mobile {
+        font-size: $text-h7;
+    }
+}
+
+.content-invest-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-gray5;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 80px;
+    @include mobile {
+        margin-bottom: 0;
+        width: calc(100% - 32px);
+    }
+}
+
+.info-contract-text {
+    color: $color-gray2;
+    padding-top: 16px;
+    font-family: $font-medium;
+    font-size: $text-h6;
+}
+
+.amount-invest-text {
+    color: $color-green-header;
+    font-family: $font-medium;
+    font-size: $text-h0;
+    @include mobile {
+        font-size: $text-h3;
+    }
+}
+
+.invest-wrap {
+    width: calc(100% - 32px);
+}
+
+.invest-note-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    width: calc(100% - 32px);
+    margin-bottom: 60px;
+}
+
+.invest-note-text {
+    color: $color-gray3;
+    font-family: $font-medium;
+    font-size: $text-h6;
+}
+
+.key-value-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $color-gray5;
+    justify-content: space-between;
+    padding: 16px 0 8px 0;
+}
+
+.no-border-key-value-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0 8px 0;
+}
+
+.key-value-no-border-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.invest-now-wrap {
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.invest-now-wrap-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.invest-now-text {
+    color: $color-white;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    padding-right: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.invest-now-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-green-header;
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-width: 35%;
+    justify-content: center;
+    animation: zoom 4s infinite;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.invest-now-container-mobile {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-green-header;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+    // animation: zoom 4s infinite;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+@keyframes zoom {
+    0%,
+    100% {
+        scale: 1;
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        scale: 1.1;
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        scale: 1;
+    }
+}
+
+@keyframes splash {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.item-method-container {
+    display: flex;
+    border: 1px solid $color-gray9;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 8px;
+}
+
+.invest-method-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 32px);
+    margin-top: 24px;
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.invest-method-text {
+    color: $color-gray2;
+    font-family: $font-regular;
+    font-size: $text-h6;
+    padding-bottom: 8px;
+}
+
+.group-check-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    margin: 24px 0 48px 0;
+    @include mobile {
+        margin: 24px 0px 0px 0px;
+    }
+}
+
+.agree-policy-text-wrap {
+    font-size: $text-h6;
+    color: $color-gray7;
+    font-family: $font-regular;
+}
+
+.agree-policy-text {
+    font-size: $text-h6;
+    color: $color-green-header;
+    font-family: $font-regular;
+    &:hover {
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+    &:active {
+        text-decoration-line: underline;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+.webview-container {
+    height: 80vh;
+}
+
+.label-popup-style {
+    display: flex;
+    font-size: $text-h5;
+    font-family: $font-medium;
+    color: $color-green;
+    align-self: center;
+    padding-bottom: 8px;
+}
+
+.spinner {
+    padding-bottom: 32px;
+}
+
+.modal-ngan-luong {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    @include mobile {
+        padding: 24px 16px;
+    }
+}
+
+.img-style {
+    width: 40%;
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        opacity: 1;
+        cursor: default;
+    }
+    @include mobile {
+        width: 40%;
+    }
+    // @include tablet {
+    //     width: 60%;
+    // }
+}
+
+.img-bank-style {
+    width: 90%;
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        opacity: 1;
+        cursor: default;
+    }
+}
+
+.wid-100 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    @include mobile {
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+
+.btn-container {
+    background-color: $color-green;
+    padding: 12px 12px;
+    width: 35%;
+    @include mobile {
+        width: calc(50% - 8px);
+    }
+}
+
+.btn-cancel {
+    background-color: $color-red-r1;
+    padding: 12px 12px;
+    width: 35%;
+    @include mobile {
+        width: calc(50% - 8px);
+    }
+}
+
+.describe-popup-style {
+    font-size: $text-h6;
+    font-family: $font-regular;
+    color: $color-gray7;
+    padding: 12px 12px 24px 12px;
+    text-align: center;
+}
+
+.img-maintain-style {
+    width: 50%;
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        opacity: 1;
+        cursor: default;
+    }
+}

@@ -1,0 +1,12 @@
+@import 'assets/scss';
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image {
+    width: 30%;
+    padding: 20px;
+}

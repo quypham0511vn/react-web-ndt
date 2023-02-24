@@ -1,0 +1,206 @@
+@import "assets/scss";
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wrap-all-title-picker {
+    display: flex;
+    flex-direction: row;
+    .title-item-picker-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 0 4px 0px;
+        .title-item-picker-text {
+            color: $color-black;
+            font-family: $font-regular;
+            font-size: $text-h6;
+        }
+        .title-check-box-item-picker-text {
+            color: $color-gray2;
+            font-family: $font-regular;
+            font-size: $text-h7;
+            padding-left: 8px;
+        }
+        .title-item-must-choose-picker {
+            color: $color-red1;
+            font-family: $font-regular;
+            font-size: $text-h7;
+            padding-left: 3px;
+        }
+    }
+}
+
+.select-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid $color-gray-d8;
+    border-radius: 5px;
+    span {
+        color: $color-gray2;
+        font-size: $text-h7;
+        font-family: $font-regular;
+    }
+    background-color: $color-white;
+}
+
+.disable-select-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid $color-gray-d8;
+    border-radius: 5px;
+    // padding: 3px 16px 3px 8px;
+    span {
+        color: $color-gray2;
+        font-size: $text-h7;
+        font-family: $font-regular;
+    }
+    background-color: $color-gray-e6;
+}
+
+.focus-select-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid $color-green-header;
+    border-radius: 5px;
+    // padding: 3px 16px 3px 8px;
+    span {
+        color: $color-gray2;
+        font-size: $text-h7;
+        font-family: $font-regular;
+    }
+}
+
+.error-select-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid $color-red;
+    border-radius: 5px;
+    // padding: 3px 16px 3px 8px;
+    span {
+        color: $color-gray2;
+        font-size: $text-h7;
+        font-family: $font-regular;
+    }
+    animation: shake 0.9s ease 1;
+}
+
+.text-error-picker {
+    display: flex;
+    width: 100%;
+    color: $color-red1;
+    font-size: $text-h7;
+    font-family: $font-regular;
+    padding: 5px 0 0 0px;
+}
+
+.item-container {
+    display: flex;
+    span {
+        color: $color-gray2;
+        font-size: $text-h7;
+        font-family: $font-regular;
+    }
+    padding: 2px 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-1px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(1px);
+    }
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 24px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: $color-white;
+    border: 1px solid $color-gray-d8;
+    border-radius: 3px;
+}
+
+.container:hover .check-mark {
+    background-color: $color-white;
+    border: 1px solid $color-green-header;
+    border-radius: 3px;
+}
+
+.check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container .check-mark:after {
+    top: 35%;
+    left: 55%;
+    width: 8px;
+    height: 16px;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-65%, -35%) rotate(45deg);
+}
+
+.container input:checked~.check-mark {
+    background: $color-green-header;
+    border: 1px solid $color-green-header;
+    border-radius: 3px;
+}
+
+.container input:checked~.check-mark:after {
+    display: block;
+}
+
+.left-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.right-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.not-found {
+    color: $color-gray2;
+    font-size: $text-h7;
+    font-family: $font-regular;
+}

@@ -1,0 +1,139 @@
+@import "assets/scss";
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.padding {
+    padding: 3% 18%;
+    // @include tablet() {
+    //     padding: 3% 5%;
+    // }
+    @include mobile() {
+        padding: 24px 16px;
+    }
+}
+
+.padding-in-profile {
+    padding: 0;
+    // @include tablet() {
+    //     padding: 0;
+    // }
+    @include mobile() {
+        padding: 4px 0;
+    }
+}
+
+.title-header {
+    color: $color-gray2;
+    font-size: $text-h5;
+    font-family: $font-medium;
+    @include mobile() {
+        font-size: $text-h6;
+    }
+}
+
+.describe-header {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    font-style: italic;
+    padding-top: 5px;
+    @include mobile() {
+        font-size: $text-h7;
+    }
+}
+
+.item-title-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    border: 1px solid $color-gray5;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    margin-top: 24px;
+    @include mobile() {
+        margin-top: 16px;
+    }
+}
+
+.text-big-header {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    padding: 24px 0;
+    @include mobile() {
+        padding: 16px 0;
+        font-size: $text-h7;
+    }
+}
+
+.text-sub-title {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-bottom: 24px;
+    @include mobile() {
+        padding-bottom: 16px;
+        font-size: $text-h7;
+    }
+}
+
+.text-sub-title4 {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    @include mobile() {
+        font-size: $text-h7;
+    }
+}
+
+.text-sub-title4-li {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-bottom: 16px;
+    @include mobile() {
+        padding-bottom: 16px;
+        font-size: $text-h7;
+    }
+}
+
+.text-sub-title4-last {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-bottom: 8px;
+    @include mobile() {
+        padding-bottom: 8px;
+        font-size: $text-h7;
+    }
+}
+
+.text-sub-title-ul {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    @include mobile() {
+        font-size: $text-h7;
+    }
+}
+
+.text-sub-title-li {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-bottom: 6px;
+    @include mobile() {
+        padding-bottom: 6px;
+        font-size: $text-h7;
+    }
+}

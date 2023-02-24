@@ -1,0 +1,158 @@
+@import 'assets/scss';
+.support-button-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 10% 0;
+    z-index: 10000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    // @include tablet {
+    //     margin: 0 20px 20% 0;
+    // }
+    @include mobile {
+        margin: 0 10px 30% 0;
+    }
+}
+
+.social-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-button-hide {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.icon-item-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: $box-shadow;
+    margin-bottom: 24px;
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.icon-chat {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: $box-shadow;
+    &:hover {
+        opacity: 1
+    }
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.icon-item-support-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: $box-shadow;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: center;
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.icon-support-chat {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    // box-shadow: $box-shadow;
+    // border: 3px solid $color-green1;
+    // animation: zoom 4s infinite;
+    &:hover {
+        opacity: 1
+    }
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.chat-animate-wave1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: $color-green1;
+    animation: zoom 4.2s infinite;
+    position: absolute;
+    z-index: -100;
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.chat-animate-wave2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: $color-green2;
+    animation: zoom 4.8s infinite;
+    align-items: center;
+    position: absolute;
+    z-index: -100;
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.icon-support-chat-cancel {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: $box-shadow;
+    &:hover {
+        opacity: 1
+    }
+    @include mobile {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+@keyframes zoom {
+    0%,
+    100% {
+        scale: 0.9;
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        scale: 1.3;
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        scale: 0.9;
+    }
+}

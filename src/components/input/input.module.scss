@@ -1,0 +1,227 @@
+@import 'assets/scss';
+.boxGroupInput {
+    display: block;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formGroup {
+    border-radius: var(--radius-input);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.errorMsg {
+    border-color: $color-red1;
+}
+
+.messageError {
+    margin: 5px 0px 0 0px;
+    background-color: $color-white;
+    .text-err {
+        color: $color-red1;
+        font-size: $text-h7;
+        font-family: $font-regular;
+    }
+}
+
+.errMsg {
+    border: 1px solid var(--red-color-1);
+    position: relative;
+    animation: shake 0.9s ease 1;
+}
+
+.ic_error {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.icon-right {
+    position: absolute;
+    right: 15px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.label {
+    font-family: $font-regular;
+    font-size: $text-h7;
+    padding-bottom: 8px;
+    span {
+        color: $color-dark-red
+    }
+}
+
+.label-right-text {
+    font-size: $text-h7;
+    font-family: $font-regular;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-1px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(1px);
+    }
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+    border-radius: 5px;
+    color: $color-gray2;
+    font-size: $text-h7;
+    font-family: $font-regular;
+    border: 1px solid $color-gray-d8;
+    position: relative;
+}
+
+.disable-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    color: $color-gray2;
+    font-size: $text-h7;
+    font-family: $font-regular;
+    background-color: $color-gray-e6;
+    border: 1px solid $color-gray-d8;
+    position: relative;
+    opacity: 1;
+    @include mobile {
+        color: $color-black !important;
+    }
+}
+
+.focus-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+    border-radius: 5px;
+    color: $color-gray2;
+    font-size: $text-h7;
+    font-family: $font-regular;
+    border: 1px solid $color-green1;
+    position: relative;
+}
+
+.error-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+    border: 1px solid $color-red;
+    border-radius: 5px;
+    color: $color-gray2;
+    font-size: $text-h7;
+    font-family: $font-regular;
+    animation: shake 0.9s ease 1;
+    border: 1px solid $color-red;
+    position: relative;
+}
+
+.text-error-picker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: $color-red;
+    font-size: $text-h7;
+    font-family: $font-regular;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    background: url(../../assets/image/img_calendar.png) no-repeat;
+    cursor: pointer;
+}
+
+input[type=date]::before {
+    color: $color-gray4;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    content: attr(placeholder);
+}
+
+input[type=date] {
+    color: $color-white;
+}
+
+input[type=date]:focus,
+input[type=date]:valid {
+    color: $color-gray2;
+    font-family: $font-regular;
+    font-size: $text-h7;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before {
+    content: '' !important;
+}
+
+::placeholder {
+    color: $color-gray4;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    text-transform: none;
+}
+
+.input-style {
+    color: $color-gray2;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 0px solid $color-gray-d8;
+}
+
+.input-style:focus {
+    outline: none;
+}
+
+input[autoCapitalize=characters] {
+    text-transform: uppercase;
+}
+
+input[autoCapitalize=words] {
+    text-transform: capitalize;
+}
+
+input[autoCapitalize=none] {
+    text-transform: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    // Chrome, Safari, Edge, Opera delete right arrow
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    // firefox delete right arrow
+    -moz-appearance: textfield;
+}

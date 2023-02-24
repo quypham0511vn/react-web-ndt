@@ -1,0 +1,100 @@
+@import "assets/scss";
+.body {
+    font-family: Roboto-Regular;
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--vh, 1vh) * 100);
+    width: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.width {
+    width: 80%;
+    margin: 0 auto;
+    @include mobile() {
+        width: 100%;
+        padding: 5% 0%;
+    }
+}
+
+.row {
+    width: 100%;
+    margin-left: 0px !important
+}
+
+.flex {
+    display: flex !important;
+    justify-content: space-evenly;
+    padding: 56px 0;
+    flex-wrap: wrap;
+    @include mobile() {
+        padding: 20px 0;
+    }
+}
+
+.divWidth {
+    text-align: center;
+    max-width: 260px !important;
+}
+
+.table {
+    padding: 16px 0px;
+}
+
+// img
+.img {
+    display: flex;
+    padding-bottom: 40px;
+    @include mobile() {
+        flex-direction: column;
+        row-gap: 0 !important;
+        padding-bottom: 20px;
+    }
+}
+
+.flex-img {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25%;
+    @include mobile() {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+.flexImg1 {
+    width: 50%;
+    @include mobile() {
+        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image1 {
+    width: 70%;
+}
+
+// img bank
+.slick-active {
+    display: none !important;
+}
+
+.imgSlide {
+    max-width: 110px;
+    height: 70px !important;
+    object-fit: scale-down;
+    display: flex !important;
+}
+
+.left {
+    padding-left: 0px !important;
+}

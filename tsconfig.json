@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext", "es6"],
+    "types": ["webrtc"],
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": "./src/",
+    "paths": {
+      // "*": [
+      //     "src/*"
+      // ]
+    }
+  },
+  "include": [
+    "src",
+    "src/@types/declarations.d.ts",
+    "src/firebase-messaging-sw.js"
+  ],
+  "exclude": ["node_modules/*"],
+  "plugins": [
+    {
+      "name": "typescript-plugin-css-modules"
+    }
+  ]
+}

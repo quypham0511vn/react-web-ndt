@@ -1,0 +1,388 @@
+@import 'assets/scss';
+.page-container {
+    width: 100%;
+    overflow: auto;
+    height: calc(var(--vh, 1vh) * 100 - $header-height);
+    overflow-x: hidden;
+}
+
+.all-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 40px;
+}
+
+.row-content {
+    display: flex;
+    max-width: 80%;
+    align-self: center;
+    @include mobile {
+        max-width: 100%;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 24px 16px;
+    border: 1px solid $color-gray9;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+}
+
+.receiver-bank-name-container {
+    border-bottom: 2px dashed $color-gray6;
+    padding: 24px 0 8px 0;
+}
+
+.receiver-bank-name-text {
+    color: $color-gray8;
+    font-size: $text-h6;
+    font-family: $font-regular;
+}
+
+.receiver-describe-transfer-text {
+    color: $color-black;
+    font-size: $text-h6;
+    font-family: $font-medium;
+}
+
+.receiver-bank-owner-text {
+    color: $color-gray8;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding: 8px 0 4px 0;
+}
+
+.receiver-bank-owner-text-value {
+    color: $color-black;
+    font-size: $text-h6;
+    font-family: $font-regular;
+}
+
+.receiver-bank-number-text {
+    color: $color-gray8;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-top: 8px;
+}
+
+.receiver-transfer-amount-text {
+    color: $color-gray8;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-top: 16px;
+}
+
+.receiver-transfer-amount-text-value {
+    color: $color-red1;
+    font-size: $text-h4;
+    font-family: $font-medium;
+}
+
+.transfer-content-text {
+    color: $color-gray8;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    padding-top: 16px;
+}
+
+.transfer-note-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-red-r1;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.transfer-note-text {
+    color: $color-red;
+    font-size: $text-h7;
+    font-family: $font-regular;
+    padding-left: 8px;
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    border: 1px solid $color-gray9;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.qr-action-text {
+    color: $color-black;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.qr-code-img-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    position: relative;
+    @include mobile {
+        width: calc(100% - 32px);
+    }
+    // @include tablet {
+    //     width: 90%;
+    // }
+}
+
+.bank-field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.bank-field-label {
+    color: $color-gray6;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    display: flex;
+    flex: 0.2;
+}
+
+.bank-field-value {
+    color: $color-gray11;
+    font-size: $text-h5;
+    font-family: $font-medium;
+    display: flex;
+    flex: 0.7;
+}
+
+.bank-field-value-no-value {
+    color: $color-gray;
+    font-size: $text-h5;
+    font-family: $font-medium;
+    display: flex;
+    flex: 0.7;
+    justify-content: flex-end;
+}
+
+.bank-owner {
+    color: $color-gray11;
+    font-size: $text-h5;
+    font-family: $font-medium;
+    padding: 8px 0 16px 0;
+    text-align: center;
+}
+
+.img-qr {
+    border-bottom: 1px solid $color-gray5;
+    padding-bottom: 12px;
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.bank-info-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-gray-e8;
+    padding: 8px 16px;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.bank-info-cell-text {
+    color: $color-gray8;
+    font-size: $text-h5;
+    font-family: $font-medium;
+}
+
+.bank-info-cell-text-no-value {
+    color: $color-gray;
+    font-size: $text-h5;
+    font-family: $font-medium;
+}
+
+.copy-text {
+    color: $color-white;
+    font-size: $text-h8;
+    font-family: $font-medium;
+    background-color: $color-green3;
+    padding: 5px 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.download {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    background-color: $color-white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid $color-green-header;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.ic-back {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: $color-gray-f5;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.ic-back-mobile {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: $color-gray-f5;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    padding: 8px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.spinner {
+    padding: 16px 0;
+}
+
+.modal-open-popup {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-gray9;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    width: 45%;
+    margin: 24px 0;
+    padding: 0 16px 16px 16px;
+    @include mobile {
+        padding: 12px 16px;
+        width: calc(90% - 16px);
+    }
+    // @include tablet {
+    //     width: 60%;
+    // }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-container {
+    background-color: $color-green;
+    padding: 12px 12px;
+    width: calc(50% - 8px);
+    @include mobile {
+        width: calc(50% - 8px);
+    }
+}
+
+.btn-cancel {
+    background-color: $color-red-r1;
+    padding: 12px 12px;
+    width: calc(50% - 8px);
+    @include mobile {
+        width: calc(50% - 8px);
+    }
+}
+
+.img-style {
+    width: 30%;
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        opacity: 1;
+        cursor: default;
+    }
+    @include mobile {
+        width: 40%;
+    }
+    // @include tablet {
+    //     width: 40%;
+    // }
+}
+
+.label-popup-style {
+    display: flex;
+    font-size: $text-h5;
+    font-family: $font-medium;
+    color: $color-green;
+    align-self: center;
+    padding-bottom: 8px;
+}
+
+.img-maintain-style {
+    width: 50%;
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        opacity: 1;
+        cursor: default;
+    }
+}
+
+.describe-popup-style {
+    font-size: $text-h6;
+    font-family: $font-regular;
+    color: $color-gray7;
+    padding: 24px 12px;
+    text-align: center;
+}

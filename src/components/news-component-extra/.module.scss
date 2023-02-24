@@ -1,0 +1,42 @@
+@import "assets/scss";
+.news-horizontal-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        height: 4px;
+    }
+    @include mobile() {
+        width: calc(100vw - 10px);
+    }
+}
+
+.news-horizontal {
+    width: calc(100vw / 3);
+    margin-right: 3%;
+    height: auto;
+    @include desktop() {
+        width: calc(100vw / 5);
+    }
+    @include mobile() {
+        width: calc(100vw / 2);
+    }
+}
+
+.news-horizontal-img {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3 / 1.5);
+    @include desktop() {
+        width: calc(100vw / 5);
+        height: calc(100vw / 5 / 1.5);
+    }
+    @include mobile() {
+        width: calc(100vw / 2);
+        height: calc(100vw / 2 / 1.5);
+    }
+}
+
+.news-horizontal-content {
+    padding: 2% 0;
+}

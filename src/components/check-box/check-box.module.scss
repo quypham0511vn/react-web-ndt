@@ -1,0 +1,69 @@
+@import "assets/scss";
+.group-check-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+}
+
+.title-check-box {
+    color: $color-gray2;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    padding-left: 8px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    user-select: none;
+    align-items: center;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.check-mark {
+    width: 24px;
+    height: 24px;
+    background-color: $color-white;
+    border: 1px solid $color-gray6;
+    border-radius: 3px;
+}
+
+.container:hover .check-mark {
+    background-color: $color-white;
+    border: 1px solid $color-green-header;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container .check-mark:after {
+    top: 35%;
+    left: 55%;
+    width: 8px;
+    height: 16px;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-65%, -35%) rotate(45deg);
+}
+
+.container input:checked~.check-mark {
+    background: $color-green-header;
+    border: 1px solid $color-green-header;
+    border-radius: 3px;
+}
+
+.container input:checked~.check-mark:after {
+    display: block;
+}

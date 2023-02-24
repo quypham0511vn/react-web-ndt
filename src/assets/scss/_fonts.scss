@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-style: normal;
+}
+
+$font-regular:'Roboto-Regular';
+$font-medium: 'Roboto-Medium';
+$font-bold: 'Roboto-Bold';
+$box-shadow: 0px 4px 8px $color-t-gray;

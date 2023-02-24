@@ -1,0 +1,25 @@
+@import "assets/scss";
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include mobile {
+        height: auto !important;
+    }
+}
+
+.padding {
+    padding: 2% 18%;
+    @include mobile() {
+        padding: 10px 5px;
+    }
+}
+
+.view-txt-bold {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

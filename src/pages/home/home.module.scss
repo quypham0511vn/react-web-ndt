@@ -1,0 +1,116 @@
+@import "assets/scss";
+.header_side {
+    display: flex;
+    // width: calc(var(--vw)* 25);
+    height: $header-height;
+    align-items: center;
+}
+
+.header {
+    &_left {
+        @extend .header_side;
+        justify-content: right;
+        width: fit-content;
+    }
+    &_right {
+        @extend .header_side;
+        justify-content: end;
+        min-width: 16vw;
+        span {
+            white-space: nowrap;
+        }
+    }
+}
+
+.icon-tienngay {
+    max-height: calc($header-height - 10px);
+}
+
+.icon-menu {
+    width: 30px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.text-full-name {
+    color: $color-black;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    padding-right: 10px;
+    // @include tablet {
+    //     padding-right: 5px;
+    // }
+}
+
+.icon-small {
+    width: 25px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.img-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0 16px 0 40px;
+    object-fit: cover;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+    // @include tablet {
+    //     margin: 0 10px 0 10px;
+    // }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    justify-content: end;
+    @include mobile {
+        justify-content: space-between;
+    }
+}
+
+.avatar-container {
+    display: flex;
+    position: relative;
+}
+
+.ic_verify {
+    position: absolute;
+    right: 10px;
+}
+
+.tabs-web-container {
+    overflow: hidden;
+}
+
+.header {
+    // background-color: $color-blue;
+    width: 100%;
+    margin-right: 2px;
+    @include mobile {
+        width: auto;
+    }
+}

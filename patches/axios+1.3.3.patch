@@ -1,0 +1,12 @@
+diff --git a/node_modules/axios/index.d.ts b/node_modules/axios/index.d.ts
+index be5f182..49f2b02 100644
+--- a/node_modules/axios/index.d.ts
++++ b/node_modules/axios/index.d.ts
+@@ -381,6 +381,7 @@ export interface AxiosResponse<T = any, D = any> {
+   headers: RawAxiosResponseHeaders | AxiosResponseHeaders;
+   config: InternalAxiosRequestConfig<D>;
+   request?: any;
++  success?: boolean;
+ }
+ 
+ export class AxiosError<T = unknown, D = any> extends Error {

@@ -1,0 +1,18 @@
+@import 'assets/scss';
+.empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-transparent;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.description {
+    font-family: $font-medium;
+    font-size: $text-h7;
+    color: $color-gray2;
+    padding-top: 24px;
+    text-align: center
+}

@@ -1,0 +1,74 @@
+@import "assets//scss/";
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-width: 20%;
+    background-color: $color-white;
+    border-radius: 8px;
+    padding: 16px 0;
+}
+
+.icon-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.icon-main {
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        opacity: 1;
+        cursor: default;
+    }
+}
+
+.text-title {
+    display: flex;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    color: $color-black;
+    align-self: center;
+    padding: 16px 0 8px 0;
+}
+
+.text-describe {
+    display: flex;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    color: $color-gray7;
+    padding-bottom: 24px;
+    align-self: center;
+}
+
+.two-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.one-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.not-center-modal {
+    height: 100vh;
+    padding: 48px 0;
+}

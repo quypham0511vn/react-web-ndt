@@ -1,0 +1,132 @@
+@import "assets/scss";
+.page-container {
+    padding-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: calc(var(--vh, 1vh) * 100 - $header-height - 8vh);
+    // @include tablet() {
+    //     height: calc(var(--vh, 1vh) * 100 - $header-height - 6vh);
+    // }
+    @include mobile() {
+        height: calc(var(--vh, 1vh) * 100 - $header-height - 8vh);
+    }
+}
+
+.top-search-component {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    padding: 0 0 16px 0;
+    justify-content: space-between;
+    @include mobile {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.right-top-search-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 16px;
+    white-space: nowrap;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.title {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.title-mobile {
+    margin: 24px 0px;
+}
+
+.picker-container {
+    display: flex;
+    text-align: left;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.table-web-container {
+    width: 64%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    padding-top: 16px;
+    border: 1px solid $color-gray5;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+.table-mobile-container {
+    padding: 0px 16px 32px;
+}
+
+.tabs-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-item-picker-text {
+    color: $color-gray2;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    display: flex;
+    padding: 10px 16px 11px 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button-see-more {
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.label-button-see-more {
+    padding: 6px;
+    font-size: $text-h7;
+    font-family: $font-medium;
+}
+
+.min-height-list {
+    min-height: 20vh;
+}
+
+.spinner {
+    padding-right: 12px;
+}
+
+.picker-container {
+    display: flex;
+}
+
+.space {
+    width: 100%;
+}

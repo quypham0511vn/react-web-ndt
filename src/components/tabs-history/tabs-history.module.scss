@@ -1,0 +1,76 @@
+@import 'assets/scss';
+.all-tabs-component {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.tabs-component-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.tabs-container-mobile {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 16px;
+    background-color: $color-white;
+    justify-content: center;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background-color: $color-gray10;
+    justify-content: center;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.tabs-text-active {
+    display: flex;
+    padding: 8px;
+    color: $color-green-header;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    background-color: $color-green-input;
+    border-radius: 8px;
+    flex: 0.5;
+    cursor: default;
+    user-select: none;
+    justify-content: center;
+}
+
+.tabs-text {
+    display: flex;
+    padding: 8px;
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    flex: 0.5;
+    &:hover {
+        opacity: 0.8;
+        color: $color-green-header
+    }
+    &:active {
+        opacity: 0.6;
+        color: $color-green-header
+    }
+}

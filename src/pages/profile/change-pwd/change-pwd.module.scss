@@ -1,0 +1,80 @@
+@import "assets/scss";
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 32px;
+    @include mobile {
+        padding: 16px 0px;
+    }
+}
+
+.container-edit {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid $color-gray5;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    @include mobile {
+        background-color: $color-white;
+        border: none;
+        box-shadow: none;
+        border-radius: none;
+        padding: 16px 2px;
+    }
+}
+
+.wid-100 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    @include mobile {
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+
+.btn-container {
+    background-color: $color-green;
+    padding: 12px 60px;
+    width: 25%;
+    @include mobile {
+        width: calc(50% - 8px);
+    }
+}
+
+.btn-cancel {
+    background-color: $color-red-r1;
+    padding: 12px 60px;
+    width: 25%;
+    @include mobile {
+        width: calc(50% - 8px);
+    }
+}
+
+.border-red {
+    padding: 3px 5px;
+    background-color: $color-red-r1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    padding: 16px 20px;
+    background-color: $color-gray-e8;
+}
+
+.img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll {
+    height: 90vh;
+    overflow-y: auto;
+}

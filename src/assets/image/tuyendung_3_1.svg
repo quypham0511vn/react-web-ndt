@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="46px" height="46px" viewbox="0 0 46 46" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="money-growth" transform="translate(1 1)">
+    <path d="M0.5 20L0.5 0" transform="translate(21.5 24)" id="Path" fill="none" fill-rule="evenodd" stroke="#003D22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L44 0L44 24L0 24L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="#00A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" transform="translate(18 8)" id="Oval" fill="#00A35B" fill-rule="evenodd" stroke="#00A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0.5L4 0.5" transform="translate(7 6.5)" id="Path" fill="none" fill-rule="evenodd" stroke="#00A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0.5L4 0.5" transform="translate(33 16.5)" id="Path" fill="none" fill-rule="evenodd" stroke="#00A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M15 0L11 0C4.925 0 0 4.925 0 11L0 13L4 13C10.075 13 15 8.075 15 2L15 0Z" transform="translate(22 31)" id="Path" fill="none" fill-rule="evenodd" stroke="#003D22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

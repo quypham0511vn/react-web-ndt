@@ -1,0 +1,31 @@
+@import "assets/scss";
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4%;
+    flex: 1;
+}
+
+.right-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.line {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: $color-gray-e8;
+}
+
+.scroll {
+    overflow-y: auto;
+}
+
+.jus-between {
+    display: flex;
+    justify-content: space-between;
+}

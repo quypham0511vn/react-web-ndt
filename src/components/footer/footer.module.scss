@@ -1,0 +1,126 @@
+@import "assets/scss";
+.footer-container {
+    background-color: $color-green-header;
+    color: $color-white;
+    width: 100%;
+}
+
+.box-footer-top {
+    padding: 12px 18% 0px 18%;
+    @include mobile {
+        padding: 12px 16px 0px 16px;
+    }
+}
+
+.content-footer-left {
+    align-items: flex-start;
+}
+
+.textarea-container {
+    height: 100px;
+    padding: 8px 0px;
+}
+
+.textarea-footer {
+    width: 100% !important;
+    height: 100px !important;
+    outline: none;
+    border: none;
+    background: $color-transparent-footer;
+    color: $color-white;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    padding: 8px 10px;
+}
+
+.textarea-footer::placeholder {
+    color: $color-white;
+}
+
+.box-footer-bottom {
+    padding: 4px 18%;
+    border-top: 1px solid $color-white;
+    gap: 10px;
+}
+
+.style-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: $color-transparent-footer;
+    padding: 12px;
+    color: $color-white;
+    font-family: $font-regular;
+    font-size: $text-h7;
+}
+
+.style-input::placeholder {
+    color: $color-white;
+}
+
+.item-link {
+    font-family: $font-regular;
+    color: $color-white;
+    font-size: $text-h6;
+    padding-top: 8px;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        opacity: 0.9;
+        text-decoration: underline;
+    }
+    &:active {
+        opacity: 0.6;
+        text-decoration: underline;
+    }
+    @include mobile {
+        font-size: $text-h7;
+    }
+}
+
+.item-icon-link {
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        opacity: 0.9;
+        text-decoration: underline;
+    }
+    &:active {
+        opacity: 0.6;
+        text-decoration: underline;
+    }
+}
+
+.info-link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-info-link {
+    padding-bottom: 8px;
+    font-family: $font-medium;
+    color: $color-white;
+    font-size: $text-h5;
+    @include mobile {
+        font-size: $text-h6;
+    }
+}
+
+.label-button-rating {
+    padding: 6px;
+    font-size: $text-h7;
+    font-family: $font-medium;
+    color: $color-green;
+    @include mobile {
+        font-size: $text-h6;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box-footer-top {
+        padding: 5% 6%;
+    }
+    .box-footer-bottom {
+        padding: 24px 4%;
+    }
+}

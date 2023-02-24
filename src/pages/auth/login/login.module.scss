@@ -1,0 +1,72 @@
+@import "assets/scss";
+.root-container {
+    display: flex;
+    flex: 1;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    .img-logo {
+        width: auto;
+        height: 90px;
+    }
+    .img-store {
+        width: auto;
+        height: 50px;
+        @include mobile {
+            width: auto;
+            height: 35px;
+        }
+    }
+    .img-qr {
+        width: auto;
+        height: 140px;
+        @include mobile {
+            width: auto;
+            height: 100px;
+        }
+    }
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: calc(5% + 12px);
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    flex: 1;
+}
+
+.right-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    flex: 1;
+}
+
+.line {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: $color-gray-e8;
+}
+
+.scroll {
+    overflow-y: auto;
+}
+
+.jus-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover-text:hover {
+    opacity: 0.8;
+}

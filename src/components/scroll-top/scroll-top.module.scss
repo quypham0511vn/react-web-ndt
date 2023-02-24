@@ -1,0 +1,62 @@
+@import 'assets/scss';
+.top-button {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    box-shadow: $box-shadow;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid $color-gray5;
+    background-color: $color-green-input;
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 50px 0;
+    z-index: 10000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+    // @include tablet {
+    //     margin: 0 20px 100px 0;
+    // }
+    @include mobile {
+        margin: 0 10px 20% 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+.top-button-hide {
+    display: none;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: (5deg);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: rotate(-5deg);
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="42px" height="46px" viewbox="0 0 42 46" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="plant-vase" transform="translate(1 1)">
+    <path d="M0.5 26L0.5 0" transform="translate(19.5 0)" id="Path" fill="none" fill-rule="evenodd" stroke="#003D22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M12 0L10 0C4.47715 0 0 4.47715 0 10L0 14L2 14C7.52285 14 12 4 12 4L12 0Z" transform="translate(20 4)" id="Path" fill="#00A35B" fill-rule="evenodd" stroke="#00A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M28 0L28 12L0 12L0 0" transform="translate(6 32)" id="Path" fill="none" fill-rule="evenodd" stroke="#003D22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L40 0L40 6L0 6L0 0Z" transform="translate(0 26)" id="Rectangle" fill="none" fill-rule="evenodd" stroke="#003D22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

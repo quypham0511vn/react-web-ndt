@@ -1,0 +1,197 @@
+@import 'assets/scss';
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.drawer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.title-drawer-container {
+    font-family: $font-medium;
+    font-size: $text-h6;
+    color: $color-gray2;
+}
+
+.close {
+    width: 15px;
+    height: 15px;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.avatar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.user-name-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-medium;
+    font-size: $text-h5;
+    color: $color-gray2;
+    margin: 24px 0 8px 0;
+    width: 100%;
+}
+
+.status-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: $color-red-r1;
+    font-family: $font-medium;
+    font-size: $text-h6;
+    color: $color-red1;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.button-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0 12px 16px;
+}
+
+.title-item-text {
+    font-family: $font-regular;
+    font-size: $text-h7;
+    color: $color-gray2;
+    margin-left: 16px;
+}
+
+.line {
+    border-bottom: 1px solid $color-gray5;
+    width: 100%;
+}
+
+.column-active {
+    background-color: $color-green-input;
+    border-radius: 2px;
+    user-select: none;
+    cursor: default;
+}
+
+.column :hover {
+    color: $color-green-header;
+    border-radius: 2px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.column :active {
+    color: $color-green-header;
+    border-radius: 2px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.un-verify-text {
+    font-size: $text-h6;
+    font-family: $font-medium;
+    color: $color-red;
+    text-align: center;
+}
+
+.verify-text {
+    font-size: $text-h6;
+    font-family: $font-medium;
+    color: $color-green-header;
+    text-align: center;
+}
+
+.wait-verify-text {
+    font-size: $text-h6;
+    font-family: $font-medium;
+    color: $color-yellow-d9;
+    text-align: center;
+}
+
+.un-verify-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    background-color: $color-red-r1;
+    border-radius: 8px;
+    margin: 8px 0 32px 0;
+    width: 100%;
+}
+
+.verify-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    background-color: $color-green2;
+    border-radius: 8px;
+    margin: 8px 0 32px 0;
+    width: 100%;
+}
+
+.wait-verify-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    background-color: $color-yellow-y1;
+    border-radius: 8px;
+    margin: 8px 0 32px 0;
+    width: 100%;
+}
+
+.hover-component:hover {
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.8;
+}
+
+.hover-component:active {
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+}

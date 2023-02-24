@@ -1,0 +1,67 @@
+@import "assets/scss";
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: calc(5% + 12px);
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    flex: 1;
+}
+
+.right-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    flex: 1;
+}
+
+.line {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: $color-gray-e8;
+}
+
+.scroll {
+    overflow-y: auto;
+}
+
+.jus-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    border: 1px solid $color-gray;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 70% !important;
+    padding: 15px 0px;
+    @include mobile {
+        padding: 10px 0px;
+    }
+}
+
+.input:hover {
+    border: 1px solid $color-green;
+}
+
+.container-input {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+    div {
+        flex: 1;
+        display: flex;
+    }
+}
+
+.message-error {
+    margin: 5px 0px 0 0px;
+    background-color: $color-white;
+}

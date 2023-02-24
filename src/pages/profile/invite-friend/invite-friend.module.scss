@@ -1,0 +1,118 @@
+@import 'assets/scss';
+.container-edit {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid $color-gray5;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    @include mobile {
+        background-color: $color-white;
+        border: none;
+        box-shadow: none;
+        border-radius: none;
+        padding: 16px 0px;
+    }
+}
+
+.button-style {
+    margin-top: 8px;
+    padding: 5px 5px 5px 16px;
+    border-radius: 5px;
+    display: flex;
+    background-color: $color-gray-e8;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qr-style {
+    border: 1px solid $color-gray-d8;
+    border-radius: 5px;
+    background-color: $color-white;
+    padding: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.button {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+.download:hover {
+    transition-duration: 0.1s;
+    background-color: $color-gray-d8;
+    border-radius: 5px;
+}
+
+.align-end {
+    display: flex;
+    align-self: flex-end;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.download {
+    border-radius: 5px;
+    border: 1px solid $color-green;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    justify-content: center;
+}
+
+.icon-small {
+    width: 25px;
+    height: 25px;
+}
+
+.qr-code {
+    width: 80%;
+    margin-bottom: 25px;
+    display: flex;
+    align-self: center;
+    height: auto;
+    width: 100%
+}
+
+.text-intro {
+    font-size: $text-h7;
+    font-family: $font-medium;
+    color: $color-gray7;
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-gray5;
+    border-radius: 5px;
+    background-color: $color-white;
+    padding: 5px;
+    box-shadow: $box-shadow;
+    margin-top: 8px;
+}

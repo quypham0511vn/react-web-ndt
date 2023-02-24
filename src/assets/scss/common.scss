@@ -1,0 +1,518 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+@mixin mobile {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+// @mixin tablet {
+//     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+//         @content;
+//     }
+// }
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+.customize-toast {
+    @media (max-width: #{$mobile-width}) {
+        padding: 1.5rem;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page {
+    width: --vh;
+    // width: calc(var(--vw, 1vh) * 100);
+}
+
+//----------------LAYOUT----------------
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-mobile {
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+        display: flex !important;
+        justify-content: unset !important;
+        flex-direction: row;
+    }
+}
+
+.row-center {
+    @extend .row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex {
+    flex: auto;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jus-start {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.jus-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+//----------------TEXT----------------
+.font-style-italic {
+    font-style: italic;
+}
+
+.text-white {
+    font-family: $font-regular;
+    color: $color-white;
+    text-align: center;
+}
+
+.text-blue {
+    font-family: $font-regular;
+    color: $color-blue;
+}
+
+.text-white-style {
+    font-family: $font-regular;
+    color: $color-white;
+}
+
+.text-black {
+    font-family: $font-regular;
+    color: $color-black;
+}
+
+.text-black1 {
+    font-family: $font-regular;
+    color: $color-black-1;
+}
+
+.text-green {
+    font-family: $font-regular;
+    color: $color-green;
+}
+
+.text-gray {
+    font-family: $font-regular;
+    color: $color-gray2;
+}
+
+.text-gray8 {
+    font-family: $font-regular;
+    color: $color-gray8;
+}
+
+.text-gray3 {
+    font-family: $font-medium;
+    color: $color-gray3;
+}
+
+.text-red {
+    font-family: $font-regular;
+    color: $color-red;
+}
+
+.bold {
+    font-family: $font-bold;
+}
+
+.medium {
+    font-family: $font-medium;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.center-flex-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @include tablet {
+    //     align-items: flex-start;
+    // }
+    @include mobile {
+        align-items: flex-start;
+    }
+}
+
+.text-preview {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: calc(2 * 1.2 * $text-h6);
+    line-height: calc($text-h6 * 1.2);
+}
+
+.text-preview-des {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: calc(3 * 1.2 * $text-h7);
+    line-height: calc($text-h7 * 1.2);
+}
+
+.h1 {
+    font-size: $text-h1;
+    @include mobile {
+        font-size: $text-h3;
+    }
+}
+
+.h2 {
+    font-size: $text-h2;
+    @include mobile {
+        font-size: $text-h4;
+    }
+}
+
+.h3 {
+    font-size: $text-h3;
+    @include mobile {
+        font-size: $text-h5;
+    }
+}
+
+.h4 {
+    font-size: $text-h4;
+    @include mobile {
+        font-size: $text-h6;
+    }
+}
+
+.h5 {
+    font-size: $text-h5;
+    @include mobile {
+        font-size: $text-h6;
+    }
+}
+
+.h6 {
+    font-size: $text-h6;
+    @include mobile {
+        font-size: $text-h7;
+    }
+}
+
+.h7 {
+    font-size: $text-h7;
+}
+
+.h8 {
+    font-size: $text-h8;
+}
+
+.h9 {
+    font-size: $text-h9;
+}
+
+.h0 {
+    font-size: $text-h0;
+}
+
+.white-space {
+    white-space: nowrap;
+}
+
+//----------------PADDING-MARGIN----------------
+.p12 {
+    padding: 12px;
+}
+
+.p16 {
+    padding: 26px 16px;
+}
+
+.p24 {
+    padding: 24px;
+}
+
+.x5 {
+    margin-right: 5px;
+}
+
+.x10 {
+    margin-right: 10px;
+}
+
+.x15 {
+    margin-right: 15px;
+}
+
+.xl5 {
+    margin-left: 5px;
+}
+
+.xl10 {
+    margin-left: 10px;
+}
+
+.x30 {
+    margin-right: 30px;
+    @include mobile {
+        margin-right: 10px;
+    }
+}
+
+.x50 {
+    margin-right: 50px;
+    @include mobile {
+        margin-right: 25px;
+    }
+}
+
+.y5 {
+    margin-top: 5px;
+}
+
+.y10 {
+    margin-top: 10px;
+}
+
+.y15 {
+    margin-top: 15px;
+}
+
+.y20 {
+    margin-top: 20px;
+    @include mobile {
+        margin-top: 10px;
+    }
+}
+
+.y30 {
+    margin-top: 30px;
+    @include mobile {
+        margin-top: 18px;
+    }
+}
+
+.y40 {
+    margin-top: 40px;
+    @include mobile {
+        margin-top: 20px;
+    }
+}
+
+.b5 {
+    margin-bottom: 5px;
+}
+
+.b10 {
+    margin-bottom: 10px;
+}
+
+.b15 {
+    margin-bottom: 15px;
+}
+
+.b20 {
+    margin-bottom: 20px;
+    @include mobile {
+        margin-bottom: 10px;
+    }
+}
+
+.b30 {
+    margin-bottom: 30px;
+    @include mobile {
+        margin-bottom: 18px;
+    }
+}
+
+.b40 {
+    margin-bottom: 40px;
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+
+.p5 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.pl3 {
+    padding-left: 3px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.pt12 {
+    padding-top: 12px;
+}
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.pb16 {
+    padding-bottom: 16px;
+}
+
+.pb8 {
+    padding-bottom: 8px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pl-16 {
+    padding-left: 16px;
+}
+
+.pr5 {
+    padding-right: 5px;
+}
+
+.pr-16 {
+    padding-right: 516x;
+}
+
+// //scroll
+// ::-webkit-scrollbar {
+//     width: 4px;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background: $color-green;
+//     width: 1px;
+// }
+//gap
+.g-4 {
+    gap: 4px;
+}
+
+.g-8 {
+    gap: 8px;
+    @include mobile {
+        gap: 16px;
+    }
+}
+
+.g-15 {
+    gap: 15px;
+    @include mobile {
+        gap: 16px;
+    }
+}
+
+.g-10 {
+    gap: 10px;
+    @include mobile {
+        gap: 16px;
+    }
+}
+
+.g-16 {
+    gap: 16px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+.g-24 {
+    gap: 24px;
+    @include mobile {
+        gap: 16px;
+    }
+}
+
+.opacity-05 {
+    opacity: 0.5;
+}
+
+.shadow {
+    box-shadow: $box-shadow;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.light-hight-x5 {
+    line-height: 1.5
+}

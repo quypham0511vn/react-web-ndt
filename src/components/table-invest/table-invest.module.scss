@@ -1,0 +1,67 @@
+@import 'assets/scss';
+.table-invest {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+thead {
+    tr {
+        background-color: $color-green2;
+        td {
+            font-family: $font-medium;
+            font-size: $text-h7;
+            color: $color-gray1;
+            padding: 16px 0;
+            text-align: center;
+            border-bottom: 1px solid $color-gray-e8;
+        }
+    }
+}
+
+tbody {
+    td {
+        font-family: $font-regular;
+        font-size: $text-h7;
+        color: $color-gray2;
+        text-align: center;
+        padding: 16px 0;
+        border-bottom: 1px solid $color-gray-e8;
+    }
+    .row-even {
+        background-color: $color-gray-f7;
+    }
+    .row-odd {
+        background-color: $color-white;
+    }
+}
+
+.green-value {
+    color: $color-green-header;
+}
+
+.style-table-footer {
+    background-color: $color-gray5;
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.body-table {
+    display: flex;
+}
+
+.spinner {
+    padding: 10vh 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image {
+    width: 30%;
+    padding: 20px;
+}

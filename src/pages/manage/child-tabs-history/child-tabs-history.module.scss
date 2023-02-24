@@ -1,0 +1,154 @@
+@import 'assets/scss';
+.page-container {
+    padding-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: calc(var(--vh, 1vh) * 100 - $header-height - 8vh);
+    // @include tablet() {
+    //     height: calc(var(--vh, 1vh) * 100 - $header-height - 6vh);
+    // }
+    @include mobile() {
+        height: calc(var(--vh, 1vh) * 100 - $header-height - 8vh);
+    }
+    .top-search-component {
+        border-radius: 8px;
+        border: 1px solid $color-gray5;
+        display: flex;
+        padding: 16px 0;
+        box-shadow: $box-shadow;
+        margin-top: 30px;
+        width: calc(64% - 10px);
+        margin-left: -26px !important;
+        align-self: center;
+    }
+    .top-search-mobile-component {
+        display: flex;
+        padding: 24px 16px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-gray10;
+        width: calc(100% - 32px);
+        margin-top: 10px;
+    }
+    .right-top-search-component {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+    }
+    .picker-container {
+        display: flex;
+        text-align: left;
+    }
+    .text-your-chance {
+        font-family: $font-medium;
+        font-size: $text-h4;
+        color: $color-black;
+    }
+    .text-your-mobile-chance {
+        font-family: $font-medium;
+        font-size: $text-h6;
+        color: $color-black;
+    }
+    .text-your-chance-search {
+        font-family: $font-medium;
+        font-size: $text-h6;
+        color: $color-green-header;
+    }
+    .col-history {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 24px;
+}
+
+.flat-list {
+    width: 64%;
+    display: flex;
+    padding: 0 18%;
+    flex-direction: column;
+    margin-bottom: 40px;
+    @include mobile() {
+        width: calc(100% - 32px);
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+.button-see-more {
+    align-self: center;
+    justify-content: center;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.content-item-picker-text {
+    // color: $color-gray2;
+    // font-family: $font-regular;
+    // font-size: $text-h7;
+    // display: flex;
+    // width: 100%;
+    // padding: 11px 16px;
+    // border-radius: 5px;
+    // border: none;
+    // outline: none;
+    color: $color-gray2;
+    font-family: $font-regular;
+    font-size: $text-h7;
+    display: flex;
+    padding: 9px 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.label-button-see-more {
+    padding: 6px;
+    font-size: $text-h7;
+    font-family: $font-medium;
+}
+
+.spinner {
+    padding-right: 12px;
+}
+
+.spinner-loading {
+    padding: 20vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 16px;
+}
+
+.btn-invest-now {
+    align-self: center;
+    margin-bottom: 36px;
+}
+
+.picker-container {
+    display: flex;
+}
+
+.space {
+    width: 100%;
+}

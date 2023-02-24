@@ -1,0 +1,73 @@
+@import 'assets/scss';
+.page-wrap-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.all-tabs-component {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-component {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 64%;
+    align-self: center;
+    padding: 24px 0;
+}
+
+.tabs-component-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    align-self: center;
+    padding: 24px 0;
+}
+
+.tabs-container-mobile {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    gap: 24px;
+    padding-left: 16px;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    gap: 24px;
+}
+
+.tabs-text-active {
+    color: $color-green-header;
+    font-size: $text-h6;
+    font-family: $font-medium;
+    border-radius: 8px;
+    cursor: default;
+    user-select: none;
+    justify-content: center;
+}
+
+.tabs-text {
+    color: $color-gray2;
+    font-size: $text-h6;
+    font-family: $font-regular;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+        opacity: 0.8;
+        color: $color-green-header
+    }
+    &:active {
+        opacity: 0.6;
+        color: $color-green-header
+    }
+}

@@ -1,0 +1,38 @@
+@import 'assets/scss';
+.table-container {
+    .key-value-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .not-key-value-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .key-text {
+        font-family: $font-regular;
+        color: $color-gray2;
+        font-size: $text-h7;
+    }
+    .value-text {
+        font-family: $font-regular;
+        color: $color-gray2;
+        font-size: $text-h7;
+    }
+    .green-key-text {
+        font-family: $font-regular;
+        color: $color-green3;
+        font-size: $text-h7;
+    }
+    .period-container {
+        border: 1px solid $color-gray5;
+        padding: 8px 16px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        display: flex;
+    }
+    .spinner {
+        padding: 5vh 50%;
+    }
+}

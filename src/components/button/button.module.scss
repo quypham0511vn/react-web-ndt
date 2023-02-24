@@ -1,0 +1,110 @@
+@import 'assets/scss';
+.text {
+    font-family: $font-regular;
+    text-align: center;
+    font-size: $text-h6;
+    display: block;
+}
+
+.btn-base-text {
+    font-family: $font-medium;
+    text-align: center;
+    font-size: $text-h7;
+}
+
+.container {
+    border-radius: 5px;
+    border: unset;
+    padding: 10px 0;
+}
+
+.btn-base {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    color: $color-white;
+    padding: 8px;  
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.btn {
+    &_red {
+        @extend .btn-base;
+        background-color: $color-red;
+    }
+    &_gray {
+        @extend .btn-base;
+        background-color: $color-gray
+    }
+    &_green {
+        @extend .btn-base;
+        background-color: $color-green
+    }
+    &_outline_green {
+        @extend .btn-base;
+        background-color: $color-white;
+        border: solid $color-green;
+        border-width: 1px;
+    }
+    &_outline_red {
+        @extend .btn-base;
+        background-color: $color-white;
+        border: solid $color-red;
+        border-width: 1px;
+    }
+    &_outline_blue {
+        @extend .btn-base;
+        background-color: $color-white;
+        border: solid $color-blue;
+        border-width: 1px;
+    }
+}
+
+.btn_txt {
+    &_white {
+        @extend .btn-base-text;
+        color: $color-white;
+    }
+    &_green {
+        @extend .btn-base-text;
+        color: $color-green;
+    }
+    &_red {
+        @extend .btn-base-text;
+        color: $color-red;
+    }
+    &_blue {
+        @extend .btn-base-text;
+        color: $color-blue;
+    }
+    &_gray {
+        @extend .btn-base-text;
+        color: $color-gray2;
+    }
+}
+
+.icon-right-styles {
+    max-height: 20px;
+    margin-left: 10px;
+}
+
+.spinner {
+    position: absolute;
+    left: 35%;
+    @include mobile(){
+        left: 30%;
+    }
+}

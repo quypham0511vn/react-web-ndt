@@ -1,0 +1,28 @@
+@import "assets/scss";
+.radio {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    padding: 2px;
+    border: 1px solid $color-gray-d8;
+    display: flex;
+    @include mobile {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.radio-active {
+    background-color: $color-green;
+    flex: 1;
+    border-radius: 15px;
+}
+
+.radio-no-active {
+    background-color: $color-white;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+}

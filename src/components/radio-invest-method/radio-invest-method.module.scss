@@ -1,0 +1,87 @@
+@import "assets/scss";
+.container {
+    display: flex;
+    user-select: none;
+}
+
+.container input {
+    display: none;
+}
+
+.check-mark {
+    width: 20px;
+    height: 20px;
+    background-color: $color-white;
+    border: 2px solid $color-gray6;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:hover .check-mark {
+    display: flex;
+    background-color: $color-white;
+    border: 2px solid $color-green-header;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.container:active .check-mark {
+    display: flex;
+    background-color: $color-white;
+    border: 2px solid $color-green-header;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.container .check-mark:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+}
+
+.container input:checked~.check-mark {
+    display: flex;
+    background: $color-white;
+    border: 2px solid $color-green-header;
+    cursor: default;
+    opacity: 1;
+}
+
+.container input:checked~.check-mark:after {
+    display: flex;
+    background-color: $color-green-header;
+}
+
+.item-method-container {
+    display: flex;
+    border: 1px solid $color-gray9;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 8px;
+    .item-method-left-container {
+        display: flex;
+        align-items: center;
+    }
+    .item-method-text {
+        color: $color-gray2;
+        font-family: $font-medium;
+        font-size: $text-h6;
+        padding-left: 12px;
+    }
+}
+
+.invest-wrap {
+    width: 100%;
+}
+
+.column-wrap {
+    flex-direction: column;
+    display: flex;
+}

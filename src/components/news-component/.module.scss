@@ -1,0 +1,12 @@
+@import "assets/scss";
+.img {
+    width: 100%;
+    min-height: 100px;
+    padding-right: 10px;
+    height: 100%;
+    object-fit: cover;
+    @include mobile {
+        min-width: 200px;
+        height: auto;
+    }
+}

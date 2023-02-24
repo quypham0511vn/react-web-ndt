@@ -1,0 +1,51 @@
+@import "assets/scss";
+.root-container {
+    display: flex;
+    flex: 1;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: calc(5% + 12px);
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.right-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    flex: 1;
+}
+
+.line {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: $color-gray-e8;
+}
+
+.scroll {
+    overflow-y: auto;
+}
+
+.jus-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picker-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hover-text:hover {
+    color: $color-blue
+}
